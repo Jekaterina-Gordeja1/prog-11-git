@@ -1,11 +1,15 @@
-import math
-a = int(input("Ievadi preces daudzums: "))
-print("Vienas precfes cena ir 2.35Ls")
-print(math.floor(a * 2.35))
+print('Ievadi skaitli tikai no 1 līdz 10 !')
+a = int(input('Ievadi pirmo skaitli!'))
+b = int(input('Ievadi otro skaitli!'))
+c = int(input('Ievadi trešo skaitli!'))
 
-if a * 2.35 > 4.7:
-  print("jums būs atlaide 10%!")
-  print(math.floor(a * 2.35 / 10.0))
-else:
-  if a == 2.35 < 4.7:
-    print("Nav atlaides!")
+smallest = 0
+
+if a < b and a < c :
+  smallest = a 
+if b < a and b < c :
+  smallest = b
+if c < a and c < b :
+  smallest = c
+
+  print(smallest, " Tas is mazakais sdkaitlis!")
